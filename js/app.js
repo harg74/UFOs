@@ -7,13 +7,13 @@ var tbody = d3.select('tbody');
     // Build table
     function buildTable(data){
         //standard way to clear data, create a blank canvas.
-        tbody.html('');
+        tbody.html("");
 
         //find the <tbody> tag within the HTML and add a table row ("tr")
         //(dataRow) that will represent each row of the data as we iterate through the array
         //*** for each one dataRow it will append a table row within the tbody tag.***
         data.forEach((dataRow) => {
-            let row = tbody.append('tr');
+            let row = tbody.append("tr");
 
         //Object.values, to reference one object from the array of UFO sightings and get its values.
         //(dataRow) we want the values to go into the dataRow
@@ -27,13 +27,13 @@ var tbody = d3.select('tbody');
                 }
             );
         });
-    };
+    }
 
     function handleClick(){
         //.select it will return an array with the first matching element that includes the specified selector string.
         //D3 to look for the #datetime id in the HTML tags
         //By chaining .property("value"); to the d3.select function, we're telling D3 not only to look for where our date values are stored on the webpage, but to actually grab that information and hold it in the "date" variable.
-        let date = d3.select('#datetime').property('value');
+        let date = d3.select("#datetime").property("value");
         let filteredData = tableData;
 
         //row is the call back, which is each one of the rows (elements), which will filter the default data to show only the date entered.
