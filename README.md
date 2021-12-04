@@ -12,7 +12,7 @@ To begin with, several input texts were created, so the users can narrow or expa
 
 ![Screen Shot 2021-12-01 at 13 32 31 1](https://user-images.githubusercontent.com/78564912/144696172-d1cb3ce6-040d-4bde-aedf-f6c1dead482f.png)
 
-See full code here --->
+See full JS code here ---> https://github.com/harg74/UFOs/tree/main/js
 
 ### Summary
 
